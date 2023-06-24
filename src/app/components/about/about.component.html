@@ -1,0 +1,9 @@
+<p>about works!</p>
+
+<p>My name is {{ username }}</p>
+
+<ul>
+  <li *ngFor="let user of users; let i = index">
+    {{ user.id }} - {{ user.name | avatar }}- {{ user.email }}
+  </li>
+</ul>
